@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:textSize="14dp"
+        android:gravity="center_horizontal"
+        android:text="陕汽故障码查询器" />
+
+    <EditText
+        android:id="@+id/edit_spn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="请输入相应的SPN" />
+
+    <EditText
+        android:id="@+id/edit_fmi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:hint="请输入相应的FMI" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/button_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开始查询" />
+
+    <TextView
+        android:id="@+id/textView_context"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:scrollbars="vertical"
+         android:maxLines="1000"/>
+
+</LinearLayout>
